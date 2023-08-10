@@ -1,0 +1,253 @@
+body {
+  font-family: "Trade Gothic";
+  line-height: 1.2;
+  background-color: #000;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.curved-title {
+  font-family: Baskervville;
+  font-size: 60px;
+}
+.big-title {
+  font-size: 150px;
+}
+.subtitle {
+  font-weight: 700;
+  font-size: 34px;
+}
+.image-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.image-bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-bg::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.svg-frame {
+  position: absolute;
+  z-index: 1500;
+  top: 15px;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  pointer-events: none;
+}
+.big-frame-corner {
+  position: absolute;
+}
+.left-top {
+  left: 0;
+  top: 0;
+}
+.right-top {
+  top: 0;
+  right: 0;
+}
+.left-bottom {
+  left: 0;
+  bottom: 0;
+}
+.right-bottom {
+  right: 0;
+  bottom: 0;
+}
+.top,
+.bottom,
+.left,
+.right {
+  position: absolute;
+}
+.top,
+.bottom {
+  left: 24px;
+  right: 24px;
+}
+.top {
+  top: 0;
+}
+.bottom {
+  bottom: 0;
+}
+.left,
+.right {
+  top: 24px;
+  bottom: 24px;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}
+.big-frame-line::before,
+.big-frame-line::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+}
+.top::before {
+  top: 0px;
+  width: 100%;
+  height: 2px;
+}
+.top::after {
+  top: 4px;
+  width: 100%;
+  height: 1px;
+}
+.bottom::before {
+  bottom: 0px;
+  width: 100%;
+  height: 2px;
+}
+.bottom::after {
+  bottom: 4px;
+  width: 100%;
+  height: 1px;
+}
+.left::before {
+  left: 0px;
+  width: 2px;
+  height: 100%;
+}
+.left::after {
+  left: 4px;
+  width: 1px;
+  height: 100%;
+}
+.right::before {
+  right: 1px;
+  width: 2px;
+  height: 100%;
+}
+.right::after {
+  right: 5px;
+  width: 1px;
+  height: 100%;
+}
+
+/* HERO ================== */
+.hero {
+  /* height: 100vh; */
+  position: relative;
+}
+.container {
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.text-center {
+}
+.text-uppercase {
+}
+.curved-title {
+}
+.big-title {
+}
+.subtitle {
+}
+.bx-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: none;
+  border: none;
+  margin-bottom: 0;
+}
+.bx-viewport {
+  height: 100vh;
+}
+.bx-controls-direction {
+  display: none;
+}
+.bx-wrapper .bx-pager {
+  position: absolute;
+  z-index: 10;
+  bottom: 60px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.bx-wrapper .bx-pager.bx-default-pager a,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+  background-color: #bbb;
+  box-shadow: 0px 2px 15px 3px rgba(0, 0, 0, 0.7);
+}
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+  background-color: #fff;
+}
+.hero-slider {
+  height: 100%;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  padding: 17px 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease 0s;
+}
+.button:hover {
+  color: #000;
+  background-color: rgba(255, 255, 255, 1);
+}
+/* Media============================ */
+@media (max-width: 1024px) {
+  .curved-title {
+    font-size: 40px;
+  }
+  .big-title {
+    font-size: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .curved-title,
+  .subtitle {
+    font-size: 28px;
+  }
+  .big-title {
+    font-size: 60px;
+  }
+  .bx-viewport,
+  .container {
+    height: 90vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .location-card {
+    min-height: 708px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
